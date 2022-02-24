@@ -34,12 +34,12 @@ Basé sur le Serverless Typescript Starter pour AWS Lambda, ce projet vous perme
 
 # Local
 
-- Creer un conteneur a partir de l'image Docker distante
+- Créer un conteneur a partir de l'image Docker distante
 ``` bash
 $ docker run -dti atlasrw/serverless:danae
 ```
 
-- Installer les dependances *npm*
+- Installer les dépendances *npm*
 ``` bash
 $ npm install
 ```
@@ -49,12 +49,7 @@ $ npm install
 $ sls offline start
 ```
 
-- Deployer le service sur votre cloud AWS
+- Déployer le service sur votre cloud AWS
 ``` bash
 $ sls deploy
-```
-
-- Et ne pas oublier de tester !
-``` bash
-$ npm test
 ```
