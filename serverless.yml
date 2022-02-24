@@ -14,8 +14,8 @@ provider:
   stage: dev
   region: us-east-1
 
-  # environment:
-  #   SAMPLE_ENV_VAR: ${env:SAMPLE_ENV_VAR}
+# environment:
+#   SAMPLE_ENV_VAR: ${env:SAMPLE_ENV_VAR}
 
 functions:
   hello:

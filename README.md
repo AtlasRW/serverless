@@ -36,7 +36,7 @@ Basé sur le Serverless Typescript Starter pour AWS Lambda, ce projet vous perme
 
 - Creer un conteneur a partir de l'image Docker distante
 ``` bash
-$ docker run -dti atlasrw/danae
+$ docker run -dti atlasrw/serverless:danae
 ```
 
 - Installer les dependances *npm*
