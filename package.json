@@ -1,23 +1,26 @@
 {
-  "name": "serverless-typescript-starter",
+  "name": "danae",
   "version": "0.1.0",
-  "description": "A TypeScript starter for Serverless Framework",
+  "description": "Danaë Serverless Framework Project",
   "main": "handler.js",
   "scripts": {
     "test": "serverless-bundle test"
   },
-  "author": "",
+  "author": "Raphael Cima",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AnomalyInnovations/serverless-typescript-starter.git"
+    "url": "https://github.com/AtlasRW/danae.git"
   },
   "devDependencies": {
     "@types/aws-lambda": "^8.10.64",
     "@types/jest": "^26.0.14",
+    "serverless": "^3.3.0",
     "serverless-bundle": "3.2.1",
     "serverless-dotenv-plugin": "^3.0.0",
     "serverless-offline": "^6.8.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "url-exists-nodejs": "^0.2.3"
+  }
 }
