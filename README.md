@@ -23,11 +23,11 @@ Basé sur le Serverless Typescript Starter pour AWS Lambda, ce projet vous perme
 ### Retourne un status code correspondant a la disponibilite de l'URL dans le body
 
 **POST** https://38r141u5fd.execute-api.us-east-1.amazonaws.com/dev/check
-``` json
-"https://google.com" // 200
-"https://httpbin.org/status/404" // 404
-"not-a-valid-url" // 404
-"https://bit.ly/300awAn" // 200
+``` js
+"https://google.com"  /* 200 */
+"https://httpbin.org/status/404"  /* 404 */
+"not-a-valid-url"  /* 404 */
+"https://bit.ly/300awAn" /* 200 */
 ```
 
 ---
