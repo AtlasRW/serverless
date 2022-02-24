@@ -1,17 +1,17 @@
 # **DANAË**
 
-Base sur le Serverless Typescript Starter, ce projet vous permet de tester en local, le sopport TypeScript, le linting, et le support des variables d'environnement comme des tests unitaires.
+Basé sur le Serverless Typescript Starter pour AWS Lambda, ce projet vous permet de tester le service en local, avec le support de TypeScript, du linting, des variables d'environnement et des tests unitaires.
 
 ---
 
 # Endpoints
 
-## Hello
-### Envoie un "Hello World!" simple
+## **/hello**
+### Retourne un "Hello World!" simple
 **GET** https://38r141u5fd.execute-api.us-east-1.amazonaws.com/dev/hello
 
-## Echo
-### Retourne le body JSON de la requête
+## **/echo**
+### Retourne le body de la requête
 **POST** https://38r141u5fd.execute-api.us-east-1.amazonaws.com/dev/echo
 ``` json
 {
@@ -19,7 +19,7 @@ Base sur le Serverless Typescript Starter, ce projet vous permet de tester en lo
 }
 ```
 
-## Check
+## **/check**
 ### Retourne un status code correspondant a la disponibilite de l'URL dans le body
 
 **POST** https://38r141u5fd.execute-api.us-east-1.amazonaws.com/dev/check
