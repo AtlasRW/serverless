@@ -1,4 +1,4 @@
-# **DANAË**
+# **SERVERLESS**
 
 Basé sur le Serverless Typescript Starter pour AWS Lambda, ce projet vous permet de tester le service en local, avec le support de TypeScript, du linting, des variables d'environnement et des tests unitaires.
 
