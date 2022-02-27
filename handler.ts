@@ -1,23 +1,24 @@
-import { APIGatewayEvent, APIGatewayProxyHandler } from 'aws-lambda'
-import urlExist from 'url-exists-nodejs'
+import { APIGatewayEvent, APIGatewayProxyResult } from 'aws-lambda'
+import urlExists from 'url-exists-nodejs'
 import Gateway from './gateway'
 
-export const hello: APIGatewayProxyHandler = async () =>
-  Gateway.Result(
+export async function hello(): Promise<APIGatewayProxyResult> {
+  return Gateway.Result(
     200,
     'Hello World!'
   )
+}
 
-export const echo: APIGatewayProxyHandler = async (event: APIGatewayEvent) =>
-  Gateway.Result(
+export async function echo(event: APIGatewayEvent): Promise<APIGatewayProxyResult> {
+  return Gateway.Result(
     200,
     event.body
   )
+}
 
-export const checkUrl: APIGatewayProxyHandler = async (event: APIGatewayEvent) =>
-  Gateway.Result(
+export async function checkUrl(event: APIGatewayEvent): Promise<APIGatewayProxyResult> {
+  return Gateway.Result(
     200,
-    {
-      result: await urlExist(event.body)
-    }
+    await urlExists(event.body)
   )
+}

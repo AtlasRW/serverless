@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "target": "es6",
+    "target": "ES6",
     "sourceMap": true,
+    "alwaysStrict": true,
+    "esModuleInterop": true,
     "moduleResolution": "node"
   }
 }

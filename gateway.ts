@@ -5,7 +5,7 @@ export default class Gateway {
   static Result(code: number, value?: any): APIGatewayProxyResult {
     return {
       statusCode: code,
-      body: value ? JSON.stringify(value) : null
+      body: JSON.stringify({ result: value ?? null })
     }
   }
 
