@@ -17,5 +17,7 @@ export const echo: APIGatewayProxyHandler = async (event: APIGatewayEvent) =>
 export const checkUrl: APIGatewayProxyHandler = async (event: APIGatewayEvent) =>
   Gateway.Result(
     200,
-    await urlExist(event.body)
+    {
+      result: await urlExist(event.body)
+    }
   )
